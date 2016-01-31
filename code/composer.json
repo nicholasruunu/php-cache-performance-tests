@@ -1,0 +1,34 @@
+{
+    "name": "php-cache/performance-tests",
+    "description": "Performance testing for php-cache adapters",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nicholas Ruunu",
+            "email": "nicholas@ruu.nu"
+        }
+    ],
+    "require":  {
+        "php": "^5.5|^7",
+        "phpbench/phpbench": "^0.10.0",
+        "psr/cache": "1.0.0",
+        "predis/predis": "^1.0"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url":  "https://github.com/php-fig/cache.git"
+        }
+    ],
+    "autoload":     {
+        "psr-4": {
+            "Cache\\Taggable\\": "lib/taggable-cache/src/",
+            "Cache\\Taggable\\Tests\\": "lib/taggable-cache/tests/",
+            "Cache\\Hierarchy\\": "lib/hierarchical-cache/src/",
+            "Cache\\Hierarchy\\Tests\\": "lib/hierarchical-cache/tests/",
+            "Cache\\Adapter\\Common\\": "lib/adapter-common/src/",
+            "Cache\\Adapter\\Predis\\": "lib/predis-adapter/src/",
+            "Cache\\Adapter\\Predis\\Tests\\": "lib/predis-adapter/tests/"
+        }
+    }
+}

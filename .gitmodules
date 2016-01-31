@@ -1,0 +1,12 @@
+[submodule "code/lib/adapter-common"]
+	path = code/lib/adapter-common
+	url = https://github.com/php-cache/adapter-common.git
+[submodule "code/lib/predis-adapter"]
+	path = code/lib/predis-adapter
+	url = https://github.com/php-cache/predis-adapter.git
+[submodule "code/lib/taggable-cache"]
+	path = code/lib/taggable-cache
+	url = https://github.com/php-cache/taggable-cache.git
+[submodule "code/lib/hierarchical-cache"]
+	path = code/lib/hierarchical-cache
+	url = https://github.com/php-cache/hierarchical-cache.git

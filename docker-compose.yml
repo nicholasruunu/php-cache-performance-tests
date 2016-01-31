@@ -1,0 +1,11 @@
+bench:
+    build: .
+    volumes:
+        - ./code:/code
+    links:
+        - redis:redis
+    working_dir: /code
+    entrypoint: "./vendor/bin/phpbench run"
+
+redis:
+    image: redis
