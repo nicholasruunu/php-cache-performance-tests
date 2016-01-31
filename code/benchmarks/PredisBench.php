@@ -18,11 +18,13 @@ class PredisBench
      * @Revs(1000)
      * @Iterations(5)
      */
-    public function benchGetItem()
+    public function benchSetGetDelete()
     {
-        $cacheItem = $this->predisCachePool->getItem('|foo|bar!tagHash');
+        $key = '|foo|bar!tagHash';
+        $cacheItem = $this->predisCachePool->getItem($key);
         $cacheItem->set('baz');
         $this->predisCachePool->save($cacheItem);
-        $this->predisCachePool->deleteItem('|foo|bar!tagHash');
+        $this->predisCachePool->getItem($key);
+        $this->predisCachePool->deleteItem($key);
     }
 }
